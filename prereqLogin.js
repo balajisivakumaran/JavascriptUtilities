@@ -1,16 +1,16 @@
 var jsonData;
 const loginScript = {    
     'method': 'POST',
-    'url': 'https://<yourAPIendpoint>/connect/token',
+    'url': 'https://<yourAPIendpoint>/<dummy>/<dummy>',
     'body': {
             'mode': 'formdata',
             'formdata': [
                 {'key':'grant_type', 'value':'password'},
-                {'key':'client_id', 'value':'web_client'},
+                {'key':'client_id', 'value':'dummy_client'},
                 {'key':'password', 'value':'yourpassword'},
-                {'key':'passcode', 'value':'123'},
-                {'key':'username', 'value':'api@test'},
-                {'key':'managecode', 'value':'test'}
+                {'key':'passcode', 'value':'123456'},
+                {'key':'username', 'value':'dummy@test'},
+                {'key':'managecode', 'value':'dummycode'}
             ]
     }
 };
