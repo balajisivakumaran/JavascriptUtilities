@@ -1,13 +1,13 @@
 var jsonData;
 const loginScript = {    
     'method': 'POST',
-    'url': 'https://loginapi-uat4.adminis.co.nz/connect/token',
+    'url': 'https://<yourAPIendpoint>/connect/token',
     'body': {
             'mode': 'formdata',
             'formdata': [
                 {'key':'grant_type', 'value':'password'},
                 {'key':'client_id', 'value':'web_client'},
-                {'key':'password', 'value':'Tester99'},
+                {'key':'password', 'value':'yourpassword'},
                 {'key':'passcode', 'value':'123'},
                 {'key':'username', 'value':'api@test'},
                 {'key':'managecode', 'value':'test'}
